@@ -1,12 +1,12 @@
-# StoryApp Requirements Specification
+# kido-learning Requirements Specification
 
 ## 1. Introduction
 
 ### 1.1 Purpose
-The StoryApp is an educational platform designed specifically for children aged 4-10 years old, with a focus on supporting underserved regions where resources are limited, such as Gaza and similar areas. The app delivers engaging stories in voice-only and voice-with-picture formats to promote literacy development, vocabulary expansion, and acquisition of new knowledge. It includes mechanisms to track individual learning outcomes associated with each story, such as newly learned words and concepts, and provides tests to evaluate progress through formats like matching exercises and multiple-choice questions. The platform emphasizes community involvement by enabling content curation through story writers, reviewers, narrators, narration reviewers, graphics developers, and translators. Additionally, to foster social awareness, the app allows willing families to collect and share anonymized data on a child's learning journey via social platforms, highlighting that children in Palestine and other underprivileged areas are just like any other kids, thereby promoting empathy and support for these communities.
+The kido-learning is an educational platform designed specifically for children aged 4-10 years old, with a focus on supporting underserved regions where resources are limited, such as Gaza and similar areas. The app delivers engaging stories in voice-only and voice-with-picture formats to promote literacy development, vocabulary expansion, and acquisition of new knowledge. It includes mechanisms to track individual learning outcomes associated with each story, such as newly learned words and concepts, and provides tests to evaluate progress through formats like matching exercises and multiple-choice questions. The platform emphasizes community involvement by enabling content curation through story writers, reviewers, narrators, narration reviewers, graphics developers, and translators. Additionally, to foster social awareness, the app allows willing families to collect and share anonymized data on a child's learning journey via social platforms, highlighting that children in Palestine and other underprivileged areas are just like any other kids, thereby promoting empathy and support for these communities.
 
 ### 1.2 Scope
-The StoryApp encompasses the following key elements:
+The kido-learning encompasses the following key elements:
 - Access to a comprehensive library of stories available in voice-only mode (audio narration) and voice-with-picture mode (audio narration synchronized with visual elements).
 - Detailed tracking of learning outcomes, including vocabulary words introduced, new knowledge concepts gained, and overall progress reports accessible to parents.
 - Interactive assessment tools in the form of tests tailored to evaluate comprehension and retention, using various question types suitable for young children.

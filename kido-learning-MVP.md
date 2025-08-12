@@ -9,11 +9,10 @@ Deliver age-appropriate stories for children (4–10 years) in underserved regio
 
 ### 1.1 Story Library
 - **Formats:** Voice-only and Voice-with-picture.
-- **Categories:** Age group (4–6, 7–10) and language (Arabic, English).
+- **Categories:** Age group (4–6, 7–10) and language.
 - **Browse & Search:** By category/keyword.
 
-### 1.2 Story Playback
-- Play, pause, rewind 10s, forward 10s.
+### 1.2 Story 
 - Works offline for downloaded stories.
 
 ### 1.3 Basic Learning Tracking
@@ -38,7 +37,7 @@ Deliver age-appropriate stories for children (4–10 years) in underserved regio
 ## 2. Non-Functional (Viable)
 - Lightweight (<10MB core app).
 - Runs on low-end Android devices.
-- Arabic & English support (with RTL layout for Arabic).
+- English support.
 - Child-friendly UI: large buttons, simple icons, minimal text.
 
 ---
@@ -55,7 +54,7 @@ Deliver age-appropriate stories for children (4–10 years) in underserved regio
 ---
 
 ## 4. MVP Success Criteria
-- At least **10 ready-to-use stories** in both formats.
+- At least **10 ready-to-use stories** formats.
 - Parents can see **list of vocabulary & concepts learned**.
 - Offline playback works with at least **5 downloaded stories**.
 - At least **3 community-submitted stories** published.

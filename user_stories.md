@@ -1,100 +1,198 @@
-User Stories for kido-learning
-I've organized the user stories by the main user roles (from the spec's target audience) and key feature areas. Each story includes:
+# User Stories – Kido Learning
 
-The standard "As a... I want... so that..." format.
-Acceptance criteria (to make them testable and complete).
-Any relevant notes on priorities, dependencies, or relations to the spec.
+Organized by user roles and key feature areas, each story follows the **"As a... I want... so that..."** format with **Acceptance Criteria** and **Notes**.
 
-1. End-User Features for Children and Parents
-Story Listing and Access
-As a child (aged 4-10), I want to browse a simple story library categorized by age, language, and theme so that I can easily find engaging stories to listen to or view.
-Acceptance Criteria: Library loads offline if content is downloaded; filters work with simple taps; displays metadata like title, duration, and age group; supports voice-only and voice-with-picture modes.
+---
 
-Notes: High priority; depends on offline functionality.
-As a parent, I want to search and download stories for my child so that they can access content offline in areas with limited connectivity.
-Acceptance Criteria: Search by keyword/category; modular downloads (e.g., audio separate from visuals); confirms download completion; handles low storage by prioritizing essentials.
+## 1. End-User Features for Children and Parents
 
-Notes: Relates to resource optimization; medium priority.
-As a child, I want intuitive playback controls (play, pause, rewind/fast-forward by 10s, speed adjustment) during story playback so that I can control the experience comfortably.
-Acceptance Criteria: Controls are large and tappable; speed options include 0.75x, 1x, 1.25x; works seamlessly in both modes; no interruptions in offline play.
+### Story Listing and Access
+**Story 1**  
+As a child (aged 4-10), I want to browse a simple story library categorized by age, language, and theme so that I can easily find engaging stories to listen to or view.  
+**Acceptance Criteria:**  
+- Library loads offline if content is downloaded.  
+- Filters work with simple taps.  
+- Displays metadata (title, duration, age group).  
+- Supports voice-only and voice-with-picture modes.  
+**Notes:** High priority; depends on offline functionality.
 
-Notes: High priority for usability; ties into performance requirements (e.g., start within 2s).
-Tracking Learning Outcomes
-As a parent, I want to view a personalized learning profile for my child so that I can track cumulative progress like vocabulary learned and concepts mastered.
-Acceptance Criteria: Aggregates data from multiple stories; shows totals (e.g., 50 words learned); visual elements like progress bars; accessible offline; syncs with consent when online.
+**Story 2**  
+As a parent, I want to search and download stories for my child so that they can access content offline in areas with limited connectivity.  
+**Acceptance Criteria:**  
+- Search by keyword/category.  
+- Modular downloads (audio separate from visuals).  
+- Confirms download completion.  
+- Handles low storage by prioritizing essentials.  
+**Notes:** Medium priority; relates to resource optimization.
 
-Notes: Medium priority; depends on story completion tracking.
-As a parent, I want detailed reports on stories completed, vocabulary breakdowns, and trend analysis so that I can identify improvements or areas needing reinforcement.
-Acceptance Criteria: Includes timestamps, completion rates, themed categorizations, and time-based trends (weekly/monthly); uses charts/graphs; encrypted local storage.
+**Story 3**  
+As a child, I want intuitive playback controls (play, pause, rewind/fast-forward by 10s, speed adjustment) during story playback so that I can control the experience comfortably.  
+**Acceptance Criteria:**  
+- Large, tappable controls.  
+- Speed options: 0.75x, 1x, 1.25x.  
+- Works seamlessly in both modes.  
+- No interruptions in offline play.  
+**Notes:** High priority; ties into performance requirements.
 
-Notes: Relates to privacy/security; high priority for parental engagement.
-As the app (system), I want to automatically record learning outcomes per story (e.g., new words with definitions, concepts) so that profiles update accurately without manual input.
-Acceptance Criteria: Triggers on story completion; includes child-friendly definitions/examples; integrates with tests for mastery levels.
+---
 
-Notes: Backend story; high priority for core tracking.
-Tests for Evaluating Learning Progress
-As a child, I want optional tests after a story with age-appropriate questions (e.g., picture-based matching for 4-6 years, multiple-choice for 7-10) so that I can check my understanding in a fun way.
-Acceptance Criteria: Questions types: matching, MCQ, true/false, fill-in-blanks; audio prompts for younger kids; immediate feedback with explanations and encouragement; works offline.
+### Tracking Learning Outcomes
+**Story 4**  
+As a parent, I want to view a personalized learning profile for my child so that I can track cumulative progress like vocabulary learned and concepts mastered.  
+**Acceptance Criteria:**  
+- Aggregates data from multiple stories.  
+- Shows totals (e.g., 50 words learned).  
+- Visual elements like progress bars.  
+- Accessible offline.  
+- Syncs with consent when online.  
+**Notes:** Medium priority; depends on story completion tracking.
 
-Notes: High priority; emphasizes positive reinforcement.
-As a parent, I want test results integrated into the dashboard so that I can see accuracy rates and strengths/weaknesses to guide further learning.
-Acceptance Criteria: Metrics per question type/theme; contributes to overall progress; viewable in reports.
+**Story 5**  
+As a parent, I want detailed reports on stories completed, vocabulary breakdowns, and trend analysis so that I can identify improvements or areas needing reinforcement.  
+**Acceptance Criteria:**  
+- Timestamps, completion rates, themed categorizations.  
+- Time-based trends (weekly/monthly).  
+- Charts/graphs for visualization.  
+- Encrypted local storage.  
+**Notes:** High priority; relates to privacy/security.
 
-Notes: Depends on learning profile; medium priority.
-Social Sharing of Learning Journeys
-As a parent, I want to optionally share anonymized learning summaries on social media so that I can raise awareness about children's education in underserved areas like Gaza.
-Acceptance Criteria: Compiles summaries (e.g., "Completed 10 stories, learned 50 words"); requires explicit consent per share; uses pre-formatted templates with hashtags; no personal data revealed.
+**Story 6**  
+As the app (system), I want to automatically record learning outcomes per story so that profiles update accurately without manual input.  
+**Acceptance Criteria:**  
+- Triggers on story completion.  
+- Includes child-friendly definitions/examples.  
+- Integrates with tests for mastery levels.  
+**Notes:** High priority; backend story.
 
-Notes: Low-medium priority; relates to social impact goals; depends on privacy features.
-2. Community-Driven Content Curation
-Story Writing and Review
-As a story writer, I want to submit original stories with text, age group, theme, language, and learning objectives so that I can contribute educational content.
-Acceptance Criteria: Word limit 500-1,500; includes 5-10 vocab words with definitions; multi-stage review for approval; feedback for revisions.
+---
 
-Notes: Medium priority; core for community involvement.
-As a story reviewer, I want to evaluate submissions for educational value, cultural sensitivity, and engagement so that only high-quality stories are added to the library.
-Acceptance Criteria: Criteria checklist; approve/reject with feedback; assigns unique ID on approval.
+### Tests for Evaluating Learning Progress
+**Story 7**  
+As a child, I want optional tests after a story with age-appropriate questions so that I can check my understanding in a fun way.  
+**Acceptance Criteria:**  
+- Question types: matching, MCQ, true/false, fill-in-blanks.  
+- Audio prompts for younger kids.  
+- Immediate feedback with encouragement.  
+- Works offline.  
+**Notes:** High priority; positive reinforcement focus.
 
-Notes: Depends on submission interface; medium priority.
-Narration and Review
-As a narrator, I want to upload audio recordings for approved stories so that children can hear engaging narrations.
-Acceptance Criteria: Matches text precisely; child-appropriate tone/pacing; multiple options per story if available.
+**Story 8**  
+As a parent, I want test results integrated into the dashboard so that I can see strengths and weaknesses.  
+**Acceptance Criteria:**  
+- Metrics per question type/theme.  
+- Contributes to overall progress.  
+- Viewable in reports.  
+**Notes:** Medium priority; depends on learning profile.
 
-Notes: Medium priority; relates to audio quality non-functionals.
-As a narration reviewer, I want to assess uploads for clarity, pronunciation, and suitability so that narrations meet standards.
-Acceptance Criteria: Feedback loop for revisions; links approved audio to story.
+---
 
-Notes: Depends on narration upload.
-Graphics Development and Review
-As a graphics developer, I want to upload simple, relevant visuals for stories so that they enhance the voice-with-picture mode without overwhelming resources.
-Acceptance Criteria: File size optimization; uses shared assets; reviews for quality/relevance.
+### Social Sharing of Learning Journeys
+**Story 9**  
+As a parent, I want to optionally share anonymized learning summaries on social media so that I can raise awareness about children's education in underserved areas.  
+**Acceptance Criteria:**  
+- Pre-formatted templates with hashtags.  
+- No personal data revealed.  
+- Requires explicit consent.  
+**Notes:** Low-medium priority; social impact goal.
 
-Notes: Low-medium priority; ties into storage constraints.
-As a graphics reviewer, I want to check visuals for appropriateness and efficiency so that they align with the app's goals.
-Acceptance Criteria: Approve/reject with feedback; ensures cultural sensitivity.
-Translation and Review
-As a translator, I want to adapt stories, tests, and metadata into other languages (e.g., Arabic) so that the app is accessible in target regions.
-Acceptance Criteria: Preserves meaning/objectives; linked as variants; seamless language switching.
+---
 
-Notes: High priority for initial languages; expands accessibility.
-As a translation reviewer, I want to verify adaptations for accuracy and fluency so that translations are reliable.
-Acceptance Criteria: Feedback for iterations; adds to library on approval.
-3. Offline and Resource-Optimized Functionality
-As a user in a low-connectivity area, I want full offline access to downloaded stories, profiles, tests, and reports so that learning isn't interrupted.
-Acceptance Criteria: No data loss; resumes after interruptions; modular content management.
+## 2. Community-Driven Content Curation
 
-Notes: High priority; core constraint.
-As a user, I want to share content peer-to-peer between devices so that I can distribute stories without internet.
-Acceptance Criteria: Completes within 1 min; ensures integrity; works for stories/updates.
+### Story Writing and Review
+**Story 10**  
+As a story writer, I want to submit original stories so that I can contribute educational content.  
+**Acceptance Criteria:**  
+- 500–1,500 words.  
+- 5–10 vocab words with definitions.  
+- Multi-stage review process.  
+**Notes:** Medium priority; community involvement.
 
-Notes: Medium priority; supports underserved regions.
-Non-Functional Related Stories (Cross-Cutting)
-As any user, I want the app to be performant and usable on low-spec devices so that it loads quickly and is intuitive.
-Acceptance Criteria: Interface loads in 3s; child-friendly UI (large buttons, colors); RTL support for Arabic.
+**Story 11**  
+As a story reviewer, I want to evaluate submissions so that only high-quality stories are added.  
+**Acceptance Criteria:**  
+- Educational value, cultural sensitivity check.  
+- Approve/reject with feedback.  
+**Notes:** Medium priority; depends on submission interface.
 
-Notes: High priority; applies to all features.
-As any user, I want secure, private data handling so that learning info is protected.
-Acceptance Criteria: Encrypted storage; consent for sync/sharing; complies with child privacy standards.
+---
 
-Notes: High priority; foundational.
-These user stories cover all major elements from the spec, ensuring completeness. They can be prioritized (e.g., via MoSCoW method: Must-have, Should-have, Could-have) and estimated for development.
+### Narration and Review
+**Story 12**  
+As a narrator, I want to upload audio recordings for approved stories so that children can hear engaging narrations.  
+**Acceptance Criteria:**  
+- Matches text precisely.  
+- Child-appropriate tone/pacing.  
+**Notes:** Medium priority; relates to audio quality.
+
+**Story 13**  
+As a narration reviewer, I want to assess audio for clarity and suitability.  
+**Acceptance Criteria:**  
+- Feedback loop for revisions.  
+**Notes:** Depends on narration upload.
+
+---
+
+### Graphics Development and Review
+**Story 14**  
+As a graphics developer, I want to upload relevant visuals so that they enhance stories without overwhelming resources.  
+**Acceptance Criteria:**  
+- File size optimization.  
+- Quality and relevance review.  
+**Notes:** Low-medium priority; storage constraint focus.
+
+**Story 15**  
+As a graphics reviewer, I want to check visuals for appropriateness and efficiency.  
+**Acceptance Criteria:**  
+- Cultural sensitivity.  
+- Approve/reject with feedback.  
+
+---
+
+### Translation and Review
+**Story 16**  
+As a translator, I want to adapt stories and tests into other languages so that the app is accessible in target regions.  
+**Acceptance Criteria:**  
+- Preserves meaning/objectives.  
+- Linked as variants.  
+**Notes:** High priority; initial languages focus.
+
+**Story 17**  
+As a translation reviewer, I want to verify translations for accuracy and fluency.  
+**Acceptance Criteria:**  
+- Feedback for iterations.  
+
+---
+
+## 3. Offline and Resource-Optimized Functionality
+**Story 18**  
+As a user in a low-connectivity area, I want full offline access to all content so that learning isn't interrupted.  
+**Acceptance Criteria:**  
+- No data loss after interruptions.  
+- Modular content management.  
+**Notes:** High priority.
+
+**Story 19**  
+As a user, I want to share content peer-to-peer without internet.  
+**Acceptance Criteria:**  
+- Completes within 1 min.  
+- Ensures data integrity.  
+**Notes:** Medium priority.
+
+---
+
+## 4. Non-Functional Related Stories (Cross-Cutting)
+**Story 20**  
+As any user, I want the app to be performant and usable on low-spec devices.  
+**Acceptance Criteria:**  
+- Interface loads in ≤3s.  
+- Child-friendly UI.  
+- RTL support for Arabic.  
+**Notes:** High priority.
+
+**Story 21**  
+As any user, I want secure, private data handling.  
+**Acceptance Criteria:**  
+- Encrypted storage.  
+- Consent for sync/sharing.  
+**Notes:** High priority; foundational.
